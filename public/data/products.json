@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "ARMCHAIR",
+      "price": "$99.00",
+      "image": "/images/pricing-armchair.png",
+      "stars": 5
+    },
+    {
+      "id": 2,
+      "name": "COUCH",
+      "price": "$129.00",
+      "image": "/images/pricing-couch.png",
+      "stars": 4
+    },
+    {
+      "id": 3,
+      "name": "LIGHTING",
+      "price": "$59.00",
+      "image": "/images/pricing-lighting.png",
+      "stars": 5
+    },
+    {
+      "id": 4,
+      "name": "SOFA",
+      "price": "$89.00",
+      "image": "/images/pricing-sofa.png",
+      "stars": 4
+    },
+    {
+      "id": 5,
+      "name": "TABLE",
+      "price": "$49.00",
+      "image": "/images/pricing-table.png",
+      "stars": 4
+    },
+    {
+      "id": 6,
+      "name": "WARDROBE",
+      "price": "$599.00",
+      "image": "/images/pricing-wardrobe.png",
+      "stars": 5
+    }
+  ]
+}

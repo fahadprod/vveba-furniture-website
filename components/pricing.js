@@ -1,48 +1,30 @@
+'use client'
+
+import { useState, useEffect } from 'react';
+
 export default function Pricing() {
-  const products = [
-    {
-      id: 1,
-      name: "ARMCHAIR",
-      price: "$99.00",
-      image: "/images/pricing-armchair.png",
-      stars: 5
-    },
-    {
-      id: 2,
-      name: "COUCH",
-      price: "$129.00",
-      image: "/images/pricing-couch.png",
-      stars: 4
-    },
-    {
-      id: 3,
-      name: "LIGHTING",
-      price: "$59.00",
-      image: "/images/pricing-lighting.png",
-      stars: 5
-    },
-    {
-      id: 4,
-      name: "SOFA",
-      price: "$89.00",
-      image: "/images/pricing-sofa.png",
-      stars: 4
-    },
-    {
-      id: 5,
-      name: "TABLE",
-      price: "$49.00",
-      image: "/images/pricing-table.png",
-      stars: 4
-    },
-    {
-      id: 6,
-      name: "WARDROBE",
-      price: "$599.00",
-      image: "/images/pricing-wardrobe.png",
-      stars: 5
-    }
-  ];
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('/data/products.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch products');
+        }
+        const data = await response.json();
+        setProducts(data.products);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   const renderStars = (count) => {
     return Array(5).fill().map((_, i) => (
@@ -52,6 +34,9 @@ export default function Pricing() {
       ></i>
     ));
   };
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <section className="pricing">
