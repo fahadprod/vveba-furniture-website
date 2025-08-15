@@ -6,7 +6,7 @@ export default function Blog() {
   ];
 
   return (
-    <section className="blog">
+    <section className="blog" id="blog">
       <div className="blog-content">
         <div className="blog-top">
           <div className="magazine">

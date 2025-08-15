@@ -2,45 +2,75 @@
   "products": [
     {
       "id": 1,
-      "name": "ARMCHAIR",
-      "price": "$99.00",
+      "name": "LUXURY BED",
+      "price": "$999.00",
       "image": "/images/pricing-armchair.png",
-      "stars": 5
+      "stars": 5,
+      "category": "bedroom"
     },
     {
       "id": 2,
-      "name": "COUCH",
-      "price": "$129.00",
+      "name": "DRESSER",
+      "price": "$599.00",
       "image": "/images/pricing-couch.png",
-      "stars": 4
+      "stars": 4,
+      "category": "bedroom"
     },
     {
       "id": 3,
-      "name": "LIGHTING",
-      "price": "$59.00",
+      "name": "DINING TABLE",
+      "price": "$799.00",
       "image": "/images/pricing-lighting.png",
-      "stars": 5
+      "stars": 5,
+      "category": "dining"
     },
     {
       "id": 4,
-      "name": "SOFA",
-      "price": "$89.00",
-      "image": "/images/pricing-sofa.png",
-      "stars": 4
+      "name": "DINING CHAIRS",
+      "price": "$299.00",
+      "image": "/images/pricing-lighting.png",
+      "stars": 4,
+      "category": "dining"
     },
     {
       "id": 5,
-      "name": "TABLE",
-      "price": "$49.00",
-      "image": "/images/pricing-table.png",
-      "stars": 4
+      "name": "LEATHER SOFA",
+      "price": "$1299.00",
+      "image": "/images/pricing-sofa.png",
+      "stars": 5,
+      "category": "sofa"
     },
     {
       "id": 6,
+      "name": "SECTIONAL",
+      "price": "$1599.00",
+      "image": "/images/pricing-sofa.png",
+      "stars": 4,
+      "category": "sofa"
+    },
+    {
+      "id": 7,
+      "name": "COFFEE TABLE",
+      "price": "$349.00",
+      "image": "/images/pricing-table.png",
+      "stars": 4,
+      "category": "table"
+    },
+    {
+      "id": 8,
       "name": "WARDROBE",
-      "price": "$599.00",
+      "price": "$899.00",
       "image": "/images/pricing-wardrobe.png",
-      "stars": 5
+      "stars": 5,
+      "category": "wardrobe"
+    },
+    {
+      "id": 9,
+      "name": "BUFFET CABINET",
+      "price": "$699.00",
+      "image": "/images/pricing-wardrobe.png",
+      "stars": 4,
+      "category": "buffet"
     }
   ]
 }
